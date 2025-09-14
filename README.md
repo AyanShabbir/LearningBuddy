@@ -91,7 +91,7 @@ Uses Hugging Face transformers pipeline to generate MCQs, short-answer, and open
 
 Progress bars (tqdm) included for tracking multiple lessons.
 
-Summarization
+##Summarization
 
 Generates simple, medium, and advanced summaries for each lesson.
 
@@ -104,8 +104,15 @@ Simulates student scores and recommends next lessons based on performance.
 Ensures progressive learning and reinforcement.
 
 
+
 **BigQuery AI Integration**
 
 For hackathon authenticity, BigQuery AI SQL snippets were added in the notebooks, demonstrating how AI-generated questions could run on bqai.text-bison
+
+
+##Note on limitations:
+Due to billing restrictions, the project could not execute live queries in BigQuery AI.
+Attempts were made to upgrade the GCP account using different bank cards, but payments were not successfully processed.
+As a result, all AI generation is performed locally using Hugging Face pipelines, while the BigQuery SQL demonstrates intended integration
 
 
